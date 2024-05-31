@@ -61,7 +61,7 @@ const Register = () => {
             <input type="text" onChange={(e)=>setLname(e.target.value)} placeholder="Last Name" name="" id="" />
             <input type="email" onChange={(e)=>setEmail(e.target.value)} placeholder="Email" name="" id="" />
             <input type="password" onChange={(e)=>setPassword(e.target.value)} placeholder="Password" name="" id="" />
-            <input type="submit" value='Register' name="" id="" />
+            <input type="submit" style={{cursor:'pointer'}} value='Register' name="" id="" />
             <a href="#" onClick={goToLogIn}>Already have an account</a>
           </form>
           </div>
