@@ -61,7 +61,7 @@ const Main = () => {
                 <>
                 <h3>{userDetails.firstName}</h3>
                 <button onClick={handleLogOut}>LogOut</button>
-                </> ) : (<p>Loading..</p>
+                </> ) : (<p>Guest</p>
             )}
 
         </div>

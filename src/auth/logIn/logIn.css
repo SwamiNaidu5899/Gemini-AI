@@ -33,6 +33,9 @@
   border-radius: 5px;
   border: 1px solid black;
 }
+.btn{
+  cursor: pointer;
+}
 a {
   color: white;
   text-decoration-color: rgb(142, 141, 141);

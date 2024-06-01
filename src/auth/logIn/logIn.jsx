@@ -12,6 +12,10 @@ const LogIn = () => {
         navigator('/register')
       }
 
+      const guest = ()=>{
+        navigator('/home')
+      }
+
   const handlerSubmit= async (e)=>{
     e.preventDefault()
 
@@ -38,7 +42,8 @@ const LogIn = () => {
       <form className="logIn-form" onSubmit={handlerSubmit}>
         <input type="email" placeholder="Enter email" onChange={(e)=>setEmail(e.target.value)} value={email} name="" id="" />
         <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} value={password} name="" id="" />
-        <input type="submit" value='LogIn' />
+        <input className="btn" type="submit" value='LogIn' />
+        <input className="btn" onClick={guest} type="submit" value='Guest' />
         <a href="#" onClick={goToRegister}>Register</a>
       </form>
       </div>
